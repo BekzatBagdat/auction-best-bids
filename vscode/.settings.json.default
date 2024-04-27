@@ -8,5 +8,12 @@
   "html.format.contentUnformatted": "",
   "editor.formatOnSave": true,
   "javascript.preferences.quoteStyle": "single",
-  "prettier.singleQuote": true
+  "prettier.singleQuote": true,
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "~/../css"
+    }
+  ]
 }
