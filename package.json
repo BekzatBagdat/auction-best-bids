@@ -1,6 +1,6 @@
 {
   "name": "auction-best-bids",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "Auction site where users can add their own and bid on others items, each new user is given 1000 credits to use on the site",
   "main": "main.js",
   "scripts": {
