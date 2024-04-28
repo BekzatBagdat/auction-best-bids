@@ -11975,4 +11975,9 @@ textarea.form-control-lg {
   background: none;
   border: 0;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #ce4f51;
 }/*# sourceMappingURL=main.css.map */
