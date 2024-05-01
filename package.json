@@ -1,0 +1,52 @@
+{
+  "name": "auction-best-bids",
+  "version": "0.0.4",
+  "description": "Auction site where users can add their own and bid on others items, each new user is given 1000 credits to use on the site",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier -w src/**/*.js",
+    "lint": "eslint src/**/*.js",
+    "lint-fix": "eslint src/**/*.js --cache --fix",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BekzatBagdat/auction-best-bids.git"
+  },
+  "keywords": [
+    "auction",
+    "bids",
+    "items"
+  ],
+  "author": "Bekzat Bagdat",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BekzatBagdat/auction-best-bids/issues"
+  },
+  "homepage": "https://github.com/BekzatBagdat/auction-best-bids#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.1.1",
+    "eslint": "^9.1.1",
+    "globals": "^15.0.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^3.2.5"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.html": [
+      "prettier --write"
+    ],
+    "*.scss": [
+      "prettier --write"
+    ]
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}
