@@ -11970,6 +11970,12 @@ textarea.form-control-lg {
   background-color: #30475e !important;
 }
 
+.nav-logo {
+  cursor: pointer;
+  margin-right: 10px;
+  width: 70px;
+}
+
 .nav-link {
   display: block;
   padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
