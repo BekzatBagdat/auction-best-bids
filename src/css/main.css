@@ -12019,6 +12019,11 @@ body {
   color: #ffffff;
 }
 
+footer div {
+  background-color: #30475e;
+  color: #e8e8e8;
+}
+
 .btn-primary {
   --bs-btn-color: #ffffff;
   --bs-btn-bg: #30475e;
