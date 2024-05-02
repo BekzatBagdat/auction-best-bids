@@ -11965,6 +11965,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body {
+  background-color: #e8e8e8;
+}
+
 [data-bs-theme=dark] {
   color-scheme: dark;
   --bs-body-bg: #30475e;
