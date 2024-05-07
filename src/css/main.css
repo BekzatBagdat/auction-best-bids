@@ -12039,4 +12039,16 @@ footer div {
   --bs-btn-disabled-color: #ffffff;
   --bs-btn-disabled-bg: #30475e;
   --bs-btn-disabled-border-color: #30475e;
+}
+
+.logo-message-container img {
+  max-width: 150px;
+}
+
+.logo-message-container p a {
+  color: blue;
+}
+
+.login-form-container {
+  max-width: 300px;
 }/*# sourceMappingURL=main.css.map */
