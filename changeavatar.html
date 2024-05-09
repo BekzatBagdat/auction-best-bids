@@ -10,7 +10,7 @@
     <link rel="icon" href="src/img/icon.png" />
     <link rel="stylesheet" href="src/css/main.css" />
 
-    <title>Auction Best Bids | Sign Up</title>
+    <title>Change Avatar</title>
   </head>
   <body class="d-flex flex-column min-vh-100">
     <!--Navigation Bar-->
@@ -61,81 +61,22 @@
     </nav>
     <!--Main content-->
     <main>
-      <!--Logo and message-->
-      <div
-        class="logo-message-container mt-5 d-flex justify-content-center flex-column align-items-center"
-      >
-        <img
-          class="mb-3"
-          src="src/img/logoprofile.png"
-          alt="Auction Best Bids"
-        />
-        <p>
-          Already have an Account?
-          <a href="login.html">Login here</a>
-        </p>
-      </div>
-      <!--Form-->
-      <div class="login-form-container container-fluid">
-        <form class="signup-form">
-          <!--Username-->
+      <div class="change-avatar-container container-fluid mt-5">
+        <form>
+          <!--Image URL-->
           <div class="mb-3">
-            <label for="signUpUsername" class="form-label">Username</label>
+            <label for="changeAvatarURL" class="form-label">Image URL</label>
             <input
               type="text"
               class="form-control"
-              id="signUpUsername"
+              id="changeAvatarURL"
               required
             />
           </div>
-          <!--E-Mail-->
-          <div class="mb-3">
-            <label for="signUpEmail" class="form-label">E-mail</label>
-            <input
-              type="email"
-              class="form-control"
-              id="signUpEmail"
-              required
-            />
-          </div>
-          <!--Avatar URL-->
-          <div class="mb-3">
-            <label for="signUpAvatar" class="form-label">Avatar URL</label>
-            <input
-              type="url"
-              placeholder="https://example.com"
-              class="form-control"
-              id="signUpAvatar"
-              required
-            />
-          </div>
-          <!--Password-->
-          <div class="mb-3">
-            <label for="signUpPassword" class="form-label">Password</label>
-            <input
-              type="password"
-              class="form-control"
-              id="signUpPassword"
-              minlength="8"
-              required
-            />
-          </div>
-          <!--Confirm Password-->
-          <div class="mb-3">
-            <label for="signUpConfirmPassword" class="form-label"
-              >Confirm Password</label
-            >
-            <input
-              type="password"
-              class="form-control"
-              id="signUpConfirmPassword"
-              minlength="8"
-              required
-            />
-          </div>
+
           <!--Button-->
           <div class="d-flex justify-content-center mt-5">
-            <button type="submit" class="btn btn-primary">Sign Up</button>
+            <button type="submit" class="btn btn-primary">Change Avatar</button>
           </div>
         </form>
       </div>
