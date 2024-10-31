@@ -1,0 +1,24 @@
+{
+  "name": "auction-best-bids",
+  "version": "0.0.1",
+  "description": "Auction Website, where you can make bids and post bids",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bids",
+    "auction",
+    "best-bids"
+  ],
+  "author": "Bekzat Bagdat",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  },
+  "devDependencies": {
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "prettier": "3.3.3"
+  }
+}

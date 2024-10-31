@@ -1,0 +1,19 @@
+{
+  "files.autoSave": "onFocusChange",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "eslint.run": "onSave",
+  "eslint.validate": ["javascript"],
+  "eslint.options": {},
+  "eslint.useESLintClass": true,
+  "html.format.contentUnformatted": "",
+  "editor.formatOnSave": true,
+  "javascript.preferences.quoteStyle": "single",
+  "prettier.singleQuote": true,
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "~/../css"
+    }
+  ]
+}
