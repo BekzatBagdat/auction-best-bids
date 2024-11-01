@@ -1,0 +1,43 @@
+@import './variables';
+[data-bs-theme='dark'] {
+  color-scheme: dark;
+  --bs-body-bg: #30475e;
+  --bs-border-color: #ffffff;
+}
+.btn-outline-success {
+  --bs-btn-color: #ffffff;
+  --bs-btn-active-color: #30475e;
+  --bs-btn-border-color: #ffffff;
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-hover-bg: #ffffff;
+  --bs-btn-hover-border-color: #ffffff;
+  --bs-btn-active-color: #ffffff;
+  --bs-btn-active-bg: #1a2735;
+  --bs-btn-active-border-color: #30475e;
+}
+.btn-outline-success:hover {
+  color: #30475e;
+}
+.form-control:focus {
+  border-color: #e8e8e8;
+}
+.bg-body-tertiary {
+  --bs-bg-opacity: 1;
+  background-color: $blue !important;
+}
+.nav-logo {
+  cursor: pointer;
+  margin-right: 10px;
+  width: 70px;
+}
+.nav-link {
+  display: block;
+  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+  font-size: var(--bs-nav-link-font-size);
+  font-weight: var(--bs-nav-link-font-weight);
+  color: $gray;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: $white;
+}
