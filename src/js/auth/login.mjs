@@ -1,4 +1,5 @@
 import { UPDATE_URL } from '../constants/api.mjs';
+import { API_KEY } from '../constants/api.mjs';
 // Post Login API
 export const loginUser = async (url, userData) => {
   // DOMs
@@ -27,13 +28,12 @@ export const loginUser = async (url, userData) => {
       localStorage.setItem('email', json.data.email);
       localStorage.setItem('url', json.data.avatar.url);
       localStorage.setItem('alt', json.data.avatar.alt);
-
       //Adding Credits
-      if (!json.credits || json.credits === 0 || json.credits === undefined) {
+      if (!json.credits || json.credits === undefined) {
         await fetch(UPDATE_URL + json.data.name, {
           method: 'PUT',
           headers: {
-            'Content-Type': 'application/json',
+            'X-Noroff-API-Key': API_KEY,
             Authorization: `Bearer ${accessToken}`,
           },
           body: JSON.stringify({ credits: 1000 }),

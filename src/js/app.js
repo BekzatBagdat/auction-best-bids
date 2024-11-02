@@ -2,7 +2,8 @@ import { registerFormHandler } from './handlers/registerFormHandler.mjs';
 import { loginFormHandler } from './handlers/loginFormHandler.mjs';
 import { checkLogin } from './auth/checkLogin.mjs';
 import { logoutUser } from './auth/logout.mjs';
-
+import { requireLogin } from './auth/requirelogin.mjs';
+import { changeAvatarFormHandler } from './handlers/updateAvatarFormhandler.mjs';
 const router = () => {
   checkLogin();
   switch (window.location.pathname) {
@@ -14,7 +15,13 @@ const router = () => {
       loginFormHandler();
       break;
     case '/profile.html':
+      requireLogin();
       logoutUser();
+      break;
+    case '/changeavatar.html':
+      requireLogin();
+      changeAvatarFormHandler();
+      break;
   }
 };
 router();
