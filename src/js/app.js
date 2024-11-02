@@ -7,13 +7,13 @@ const router = () => {
   checkLogin();
   switch (window.location.pathname) {
     case '/':
-    case '/register.html':
+    case '/register':
       registerFormHandler();
       break;
-    case '/login.html':
+    case '/login':
       loginFormHandler();
       break;
-    case '/profile.html':
+    case '/profile':
       logoutUser();
   }
 };
