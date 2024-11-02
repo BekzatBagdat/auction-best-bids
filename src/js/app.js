@@ -4,11 +4,16 @@ import { checkLogin } from './auth/checkLogin.mjs';
 import { logoutUserHandler } from './handlers/logoutHandler.mjs';
 import { requireLogin } from './auth/requirelogin.mjs';
 import { changeAvatarFormHandler } from './handlers/updateAvatarFormhandler.mjs';
+import { listingsHandler } from './handlers/listingshandler.mjs';
+import { createListingFormHandler } from './handlers/createlistinghandler.mjs';
 
 const router = () => {
   checkLogin();
   switch (window.location.pathname) {
     case '/':
+    case '/index.html':
+      listingsHandler();
+      break;
     case '/register.html':
       registerFormHandler();
       break;
@@ -22,6 +27,10 @@ const router = () => {
     case '/changeavatar.html':
       requireLogin();
       changeAvatarFormHandler();
+      break;
+    case '/createlisting.html':
+      requireLogin();
+      createListingFormHandler();
       break;
   }
 };

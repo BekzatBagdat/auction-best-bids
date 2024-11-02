@@ -1,5 +1,6 @@
 //Listings
 export const BASE_URL = 'https://v2.api.noroff.dev/';
+export const LISTINGS_URL = `https://v2.api.noroff.dev/auction/listings`;
 
 //Profile
 export const REGISTER_URL = `https://v2.api.noroff.dev/auth/register`;
