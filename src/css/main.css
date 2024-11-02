@@ -12056,7 +12056,9 @@ footer div {
 .profile-img-container img {
   width: 125px;
   max-width: 100%;
-  height: auto;
+  height: 125px;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 50%;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
