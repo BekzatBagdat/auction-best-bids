@@ -1,4 +1,4 @@
-export const logoutUser = () => {
+export const logoutUserHandler = () => {
   const logoutBtn = document.querySelector('#logoutBtn');
 
   if (logoutBtn) {
