@@ -1,3 +1,5 @@
+import { LISTINGS_URL } from '../constants/api.mjs';
+import { sendListingData } from '../listings/sendListingData.mjs';
 export const createListing = (e) => {
   e.preventDefault();
   const title = document.querySelector('#createListingTitle').value;
@@ -6,7 +8,7 @@ export const createListing = (e) => {
   const date = document.querySelector('#createListingDate').value;
   const dateFormatted = new Date(date);
 
-  const data = {
+  const formData = {
     title: title,
     description: description,
     media: [
@@ -17,10 +19,10 @@ export const createListing = (e) => {
     ],
     endsAt: dateFormatted.toISOString(),
   };
-  console.log(data);
+  sendListingData(LISTINGS_URL, formData);
 };
 
 export const createListingFormHandler = () => {
-  const btn = document.querySelector('#changeAvatarBtn');
-  btn.addEventListener('click', createListing);
+  const form = document.querySelector('#createListingForm');
+  form.addEventListener('submit', createListing);
 };

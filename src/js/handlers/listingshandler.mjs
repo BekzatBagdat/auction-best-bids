@@ -3,16 +3,26 @@ import { countDownListings } from '../ui/lists/countDownListings.mjs';
 
 export const listingsHandler = async () => {
   const listingContainer = document.querySelector('#listingContainer');
-  try {
-    const res = await fetch(LISTINGS_URL, {
-      method: 'GET',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    });
-    const listings = await res.json();
+  listingContainer.innerHTML = '';
 
-    listings.data.map((listing) => {
+  const sortBy = 'updated';
+  const sortOrder = 'desc';
+  try {
+    const res = await fetch(
+      `${LISTINGS_URL}?sort=${sortBy}&sortOrder=${sortOrder}`,
+      {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      },
+    );
+    const listings = await res.json();
+    const sortedListings = listings.data.sort(
+      (a, b) => new Date(b.updated) - new Date(a.updated),
+    );
+
+    sortedListings.forEach((listing) => {
       const id = listing.id;
 
       const title = listing.title;
