@@ -37,7 +37,7 @@ export const listingsHandler = async () => {
       const endsAt = new Date(listing.endsAt);
 
       const html = `
-      <div class="card mt-4" style="width: 18rem">
+      <div class="listing-card card mt-4" style="width: 18rem; cursor: pointer">
           <img
             src="${image}"  
             class="card-img-top"
