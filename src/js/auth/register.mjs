@@ -13,7 +13,9 @@ export const regUser = async (url, data) => {
     });
 
     if (!res.ok) {
-      messageContainer.innerHTML = `<p style="color:rgb(178, 0, 0)">Failed to create an account ❌</p>`;
+      const errorData = await res.json();
+      const errorMessage = errorData.message || 'Failed to create an account.';
+      messageContainer.innerHTML = `<p style="color:rgb(178, 0, 0)">${errorMessage} ❌</p>`;
     } else {
       messageContainer.innerHTML = `<p style="color:rgb(13, 120, 1)">Account has been created ✅</p>`;
     }
