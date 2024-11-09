@@ -17,25 +17,31 @@ const router = () => {
       listingsHandler();
       break;
     case '/register.html':
+    case '/register':
       registerFormHandler();
       break;
     case '/login.html':
+    case '/login':
       loginFormHandler();
       break;
     case '/profile.html':
+    case '/profile':
       requireLogin();
       checkCreditBalance();
       logoutUserHandler();
       break;
     case '/changeavatar.html':
+    case '/changeavatar':
       requireLogin();
       changeAvatarFormHandler();
       break;
     case '/createlisting.html':
+    case '/createlisting':
       requireLogin();
       createListingFormHandler();
       break;
     case '/listing.html':
+    case '/listing':
       singleListingHandler();
       submitBidHandler();
       break;
