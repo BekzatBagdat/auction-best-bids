@@ -9,6 +9,7 @@ import { createListingFormHandler } from './handlers/createlistinghandler.mjs';
 import { singleListingHandler } from './handlers/singleListingHandler.mjs';
 import { submitBidHandler } from './handlers/submitBid.mjs';
 import { checkCreditBalance } from './ui/profile/checkCreditBalance.mjs';
+
 const router = () => {
   checkLogin();
   switch (window.location.pathname) {

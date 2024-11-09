@@ -22,7 +22,29 @@ export const listingsHandler = async () => {
       (a, b) => new Date(b.updated) - new Date(a.updated),
     );
 
-    sortedListings.forEach((listing) => {
+    // Search functionality
+    const searchForm = document.getElementById('searchForm');
+    searchForm.addEventListener('submit', (e) => {
+      // Prevent page reload
+      e.preventDefault();
+    });
+    const searchInput = document.querySelector('#searchListingInput');
+
+    let searchOutput = [];
+    searchInput.addEventListener('input', (e) => {
+      e.preventDefault();
+      const value = e.target.value;
+      // Filter listings based on search input
+      const filteredListings = searchOutput.filter((listing) =>
+        listing.title.toLowerCase().includes(value),
+      );
+      listingContainer.innerHTML = '';
+      filteredListings.forEach((listing) => {
+        listingContainer.appendChild(listing.element);
+      });
+    });
+
+    searchOutput = sortedListings.map((listing) => {
       const id = listing.id;
 
       const title = listing.title;
@@ -36,9 +58,11 @@ export const listingsHandler = async () => {
 
       const endsAt = new Date(listing.endsAt);
 
-      const html = `
-      
-      <div class="listing-card card mt-4" style="width: 18rem; cursor: pointer">
+      const html = document.createElement('div');
+      html.className = 'listing-card card mt-4';
+      html.style.width = '18rem';
+
+      html.innerHTML = `
           <img
             src="${image}"  
             class="card-img-top"
@@ -53,12 +77,12 @@ export const listingsHandler = async () => {
             </p>
             <p id="countdown-${id}" style="color: rgb(171, 3, 3)">Loading...</p> 
           </div>
-      </div>
-      `;
-      listingContainer.innerHTML += html;
+      `.trim();
 
+      listingContainer.appendChild(html);
       // countdown for the listing deadline
       countDownListings(endsAt, id);
+      return { title: title, element: html };
     });
   } catch (error) {
     console.log(error);

@@ -4,6 +4,12 @@ export const countDownListings = (endsAt, id) => {
     const timeLeft = endsAt - now;
 
     const displayCountDownEl = document.querySelector(`#countdown-${id}`);
+    //if the countdown element not exist
+    if (!displayCountDownEl) {
+      clearInterval(countdownInterval); // Clear the interval if the element is missing
+      return;
+    }
+
     if (timeLeft > 0) {
       // Time calculations
       const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
