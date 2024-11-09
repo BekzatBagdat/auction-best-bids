@@ -12,13 +12,17 @@
   max-width: 600px;
 }
 .listing-image {
+  object-fit: cover;
+  width: 600px;
   max-width: 100%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .listing-my-credits {
   font-weight: 700;
   padding-right: 5px;
 }
 .listing-counter {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   max-width: 100%;
   width: 600px;
   display: flex;
@@ -30,7 +34,7 @@
 .listing-counter p {
   color: $red;
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .listing-bids-container p {
   font-size: 1.5rem;
@@ -41,11 +45,13 @@
   background-color: $white;
   padding: 10px;
   border-radius: 8px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .listing-bid-card img {
-  max-width: 50px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  object-fit: cover;
+  object-fit: fill;
 }
 .listing-bid-card p {
   margin-bottom: 0;
@@ -63,4 +69,9 @@
   border-radius: 10px;
   height: 50px;
   color: $white;
+}
+
+.listing-bid-input {
+  max-width: 600px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }

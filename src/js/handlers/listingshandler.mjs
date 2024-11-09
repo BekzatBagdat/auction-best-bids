@@ -37,6 +37,7 @@ export const listingsHandler = async () => {
       const endsAt = new Date(listing.endsAt);
 
       const html = `
+      
       <div class="listing-card card mt-4" style="width: 18rem; cursor: pointer">
           <img
             src="${image}"  
@@ -44,7 +45,9 @@ export const listingsHandler = async () => {
             alt="${title}" 
           />
           <div class="card-body">
-            <h5>${title}</h5> 
+            <a href="/listing.html?id=${id}" style="text-decoration: none; color: inherit;">
+              <h5>${title}</h5> 
+            </a>
             <p class="card-text">
               ${description}
             </p>

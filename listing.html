@@ -53,23 +53,37 @@
       <div
         class="listing-text-div d-flex flex-column justify-content-center align-items-center"
       >
-        <h1 class="mt-5">Used chair in good condition</h1>
-        <p class="mt-4 bid-by-p">Bid By @user0101</p>
-        <p class="listing-description">
-          In ultricies fermentum aliquet. Pellentesque dui magna, condimentum
-          non ullamcorper at, cursus in sem. Nunc condimentum, purus ac sagittis
-          ultricies, metus leo pharetra mi, non vehicula felis elit et nisi.
-          Etiam venenatis commodo libero, vel ullamcorper nibh lobortis vel.
-          Aliquam auctor porta tortor, nec consequat nibh finibus a. Sed
-          ultrices risus eget iaculis luctus. Mauris vel gravida magna.
-        </p>
-        <img class="listing-image" src="./src/img/defaultImage.png" alt="" />
-        <div class="mt-5 d-flex flex-row">
+        <h1 class="mt-5">...</h1>
+        <p class="mt-4 bid-by-p">...</p>
+        <p class="listing-description">......................</p>
+        <img
+          class="listing-image"
+          src="./src/img/defaultImage.png"
+          alt="default"
+        />
+        <div class="my-credits-container mt-5 d-flex flex-row">
           <p class="listing-my-credits">My Credits:</p>
-          <p>1000</p>
+          <p class="listing-my-credits-amount">...</p>
         </div>
+        <div class="mb-2" style="color: red" id="bidMessage"></div>
+        <div class="listing-bid-input input-group input-group-md mb-3">
+          <input
+            type="number"
+            class="form-control"
+            id="bidAmount"
+            placeholder="Bid amount (credits)"
+            aria-label="Bid amount (credits)"
+            aria-describedby="button-addon"
+            min="1"
+            required
+          />
+          <button class="btn btn-primary" type="button" id="button-addon">
+            Bid
+          </button>
+        </div>
+
         <div class="listing-counter bg-white">
-          <p>50d:12h:30m:50s</p>
+          <p class="countdown-listing">....</p>
         </div>
         <div
           class="listing-bids-container mt-5 mb-5 d-flex flex-column justify-content-center align-items-center"
@@ -77,56 +91,7 @@
           <p>Bids:</p>
           <div
             class="listing-bids-cards-container d-flex align-items-start justify-content-center flex-wrap"
-          >
-            <div class="m-2 listing-bid-card d-flex align-items-center gap-2">
-              <img src="./src/img/blankprofileimage.png" alt="profile" />
-              <p>@user1212</p>
-              <div>
-                <p>500 Cred</p>
-              </div>
-            </div>
-
-            <div class="m-2 listing-bid-card d-flex align-items-center gap-2">
-              <img src="./src/img/blankprofileimage.png" alt="profile" />
-              <p>@user1212</p>
-              <div>
-                <p>500 Cred</p>
-              </div>
-            </div>
-
-            <div class="m-2 listing-bid-card d-flex align-items-center gap-2">
-              <img src="./src/img/blankprofileimage.png" alt="profile" />
-              <p>@user1212</p>
-              <div>
-                <p>500 Cred</p>
-              </div>
-            </div>
-
-            <div class="m-2 listing-bid-card d-flex align-items-center gap-2">
-              <img src="./src/img/blankprofileimage.png" alt="profile" />
-              <p>@user1212</p>
-              <div>
-                <p>500 Cred</p>
-              </div>
-            </div>
-
-            <div class="m-2 listing-bid-card d-flex align-items-center gap-2">
-              <img src="./src/img/blankprofileimage.png" alt="profile" />
-              <p>@user1212</p>
-              <div>
-                <p>500 Cred</p>
-              </div>
-            </div>
-
-            <div class="m-2 listing-bid-card d-flex align-items-center gap-2">
-              <img src="./src/img/blankprofileimage.png" alt="profile" />
-              <p>@user1212</p>
-              <div>
-                <p>500 Cred</p>
-              </div>
-            </div>
-          </div>
-        </div>
+          ></div>
         </div>
       </div>
     </main>

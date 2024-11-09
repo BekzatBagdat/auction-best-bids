@@ -11,6 +11,7 @@ export const regUser = async (url, data) => {
       },
       body: JSON.stringify(data),
     });
+
     if (!res.ok) {
       messageContainer.innerHTML = `<p style="color:rgb(178, 0, 0)">Failed to create an account ❌</p>`;
     } else {

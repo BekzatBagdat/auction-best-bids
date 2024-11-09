@@ -1,4 +1,6 @@
 import { buildProfile } from '../ui/profile/buildprofile.mjs';
+import { checkCreditBalance } from '../ui/profile/checkCreditBalance.mjs';
+
 export const checkLogin = () => {
   const navProfileLink = document.querySelector('.profile-nav-link');
   if (navProfileLink) {
@@ -10,6 +12,7 @@ export const checkLogin = () => {
       switch (window.location.pathname) {
         case '/profile.html':
           buildProfile();
+          checkCreditBalance();
       }
 
       navProfileLink.href = 'profile.html';

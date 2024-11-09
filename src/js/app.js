@@ -6,7 +6,9 @@ import { requireLogin } from './auth/requirelogin.mjs';
 import { changeAvatarFormHandler } from './handlers/updateAvatarFormhandler.mjs';
 import { listingsHandler } from './handlers/listingshandler.mjs';
 import { createListingFormHandler } from './handlers/createlistinghandler.mjs';
-
+import { singleListingHandler } from './handlers/singleListingHandler.mjs';
+import { submitBidHandler } from './handlers/submitBid.mjs';
+import { checkCreditBalance } from './ui/profile/checkCreditBalance.mjs';
 const router = () => {
   checkLogin();
   switch (window.location.pathname) {
@@ -22,6 +24,7 @@ const router = () => {
       break;
     case '/profile.html':
       requireLogin();
+      checkCreditBalance();
       logoutUserHandler();
       break;
     case '/changeavatar.html':
@@ -31,6 +34,10 @@ const router = () => {
     case '/createlisting.html':
       requireLogin();
       createListingFormHandler();
+      break;
+    case '/listing.html':
+      singleListingHandler();
+      submitBidHandler();
       break;
   }
 };
