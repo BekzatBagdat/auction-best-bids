@@ -26,7 +26,7 @@ User Stories:
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 - [Javascript](https://developer.mozilla.org/en-US/docs/Web/javascript)
-- [API Documentation]([https://wordpress.org/](https://docs.noroff.dev/docs/v2))
+- [API Documentation](https://docs.noroff.dev/docs/v2)
 
 ## Links
 - [Site deployment](https://auctionbestbids-bekzatbagdat.netlify.app/)
