@@ -1,6 +1,6 @@
 {
   "name": "auction-best-bids",
-  "version": "0.5.0",
+  "version": "1.0.0",
   "description": "Auction Website, where you can make bids and post bids",
   "main": "index.js",
   "scripts": {
