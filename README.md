@@ -81,7 +81,7 @@ npm run start
 
 2. Optional Scripts for Development (Prettier and Lint):
 
-- Code Formatting: Format your code with Prettier using
+- Code Formatting: Format your code with Prettier using:
 ```bash
 npm run format
 ```
