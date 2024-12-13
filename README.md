@@ -90,6 +90,14 @@ npm run format
 npm run lint-fix
 ```
 
+3. Husky Hooks:
+
+- Husky is set up to handle pre-commit hooks for linting and formatting automatically. Ensure it's installed by running:
+```bash
+npm run prepare
+```
+
+
 
 ## Contact
 
