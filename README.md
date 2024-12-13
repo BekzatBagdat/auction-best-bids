@@ -11,7 +11,6 @@ Auction Best Bids is an intuitive platform designed for discovering, listing, an
 Auction Best Bids provides a seamless auction experience with user-friendly features and a minimalistic design. The platform allows users to list products with title, description, deadline date and a media gallery, get bids on the listing, and place bids on other users listing . It fosters interaction and ensures accessibility for both registered and unregistered users.
 
 
-
 ## Features and User Stories
 The platform is designed with the following functionalities:
 
